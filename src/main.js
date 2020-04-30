@@ -12,8 +12,8 @@ import "@mdi/font/css/materialdesignicons.css";
 import VueClipboard from "vue-clipboard2";
 
 // Global Setting
-import "@assets/common.css";
-import Header from "@components/common/Header.vue";
+import "./assets/common.css";
+import Header from "./components/common/Header.vue";
 
 // Event Bus
 export const bus = new Vue();

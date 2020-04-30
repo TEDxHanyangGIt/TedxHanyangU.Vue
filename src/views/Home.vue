@@ -13,9 +13,7 @@
 export default {
   name: 'home',
   data: () => ({
-    route: "home",
-    potato: require('@assets/img/potato.png'),
-    word: require('@assets/img/word.png')
+    route: "home"
   })
 };
 </script>

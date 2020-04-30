@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "yarn build && cp ./CNAME ./docs/CNAME && cp ./404.html ./docs/404.html  && git add -A && git commit -am 'deploy' && git push"
+    "deploy": "yarn build && .\\deploy.sh"
   },
   "dependencies": {
     "@mdi/font": "^4.6.95",
