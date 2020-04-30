@@ -1,15 +1,18 @@
 <template>
     <v-navigation-drawer
     v-model="navigation"
-    absolute
     temporary
+    style="position: fixed"
 >
     <v-list-item>
-        <v-list-item-avatar>
-            <v-img :src="jaehyun"></v-img>
-        </v-list-item-avatar>
         <v-list-item-content>
-            <v-list-item-title>TedxHanyangU</v-list-item-title>
+            <v-list-item-title>
+                <div class="headerTitle" style="display: flex; justify-content: center;">
+                    <span class="red-text">TED</span>
+                    <span class="red-text headerTitlex">x</span>
+                    <span >HanyangU</span>
+                </div>
+            </v-list-item-title>
         </v-list-item-content>
     </v-list-item>
 

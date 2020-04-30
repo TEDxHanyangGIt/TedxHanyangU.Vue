@@ -4,7 +4,7 @@
       <v-fade-transition mode="out-in">
         <router-view />
       </v-fade-transition>
-      <footer class="footer mt-10">
+      <footer class="footer mt-10" style="text-align: center;">
         &copy; TedxHanyangU, All Rights Reserved
       </footer>
     </v-content>

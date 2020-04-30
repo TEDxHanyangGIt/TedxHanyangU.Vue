@@ -3,17 +3,41 @@
         flat
         :color="headcolor"
         style="position: fixed; transition:all ease 1s 0s"
-    >   <v-layout row justify-space-between style="padding: 0px 20px">
-            <div class="pointer" @click="goMain()">
-                <span class="font-weight-bold black--text">Tedx</span>
-                <span class="font-weight-light grey--text">HanyangU</span>
+    >   <v-layout row justify-space-between style="padding: 0px 20px; align-items: center;">
+            <div class="headerTitle" @click="goMain()">
+                <span class="red-text">TED</span>
+                <span class="red-text headerTitlex">x</span>
+                <span class="headerOrg">HanyangU</span>
             </div>
-            <v-btn
+            <div class="headerfunc">
+                <v-btn
+                    text
+                    @click="SearchSwich()"
+                    :color="btncolor"
+                    v-if="windowWidth > 500"
+                >
+                    <i class="fas fa-search"></i>
+                </v-btn>
+                <div
+                    style="transition:all 1s ease 0s;"
+                    :class="search"
+                >
+                    <v-text-field
+                        flat
+                        solo-inverted
+                        hide-details
+                        label="Search"
+                        style="width:100%"
+                    />
+                </div>
+                <v-btn
                 text
                 @click="SideBarOn()"
-            >
-                <i class="fas fa-bars"></i>
-            </v-btn>
+                :color="btncolor"
+                >
+                    <i class="fas fa-bars"></i>
+                </v-btn>
+            </div>
         </v-layout>
     </v-app-bar>
 </template>
@@ -28,7 +52,12 @@ export default {
     data() {
         return {
             headcolor: "rgba(255, 255, 255, 0)",
-            sidebaron: false
+            btncolor: "white",
+            height_check: false,
+            search_check: false,
+            sidebaron: false,
+            search: "search_hidden",
+            windowWidth: 0
         };
     },
     // ==================== Component Methods ==================== //
@@ -38,6 +67,7 @@ export default {
         goMain() {
             this.$router.push({ name: "main" }).catch(err => {});
         },
+
         SideBarOn(){
             if (this.sidebaron){
                 bus.$emit("sidebaroff")
@@ -45,22 +75,49 @@ export default {
             this.sidebaron = true
             bus.$emit("sidebaron")
         },
+
         onScroll() {
             if (window.pageYOffset >= 10){
-                this.headcolor = "rgba(255, 255, 255, 1)"
+                this.height_check = true
             } else {
-                this.headcolor = "rgba(255, 255, 255, 0)"
+                this.height_check = false
             }
         },
-        SearchOn() {
-            this.headcolor = "rgba(0, 0, 0, 0)"
+
+        SearchSwich() {
+            this.search_check = !this.search_check
+            if(this.search_check){
+                this.search = "search_show"
+            }else{
+                this.search = "search_hidden"
+            }
         },
-        SearchClose() {
-            this.headcolor = "rgba(0, 0, 0, 1)"
+
+        headerCheck(){
+            if (this.height_check || this.search_check){
+                this.headcolor = "rgba(255, 255, 255, 1)"
+                this.btncolor = "black"
+            } else{
+                this.headcolor = "rgba(255, 255, 255, 0)"
+                this.btncolor = "white"
+            }
+        },
+        handleResize() {
+            this.windowWidth = window.innerWidth
+        }
+    },
+    watch: {
+        height_check: function () {
+            this.headerCheck()
+        },
+        search_check: function () {
+            this.headerCheck()
         }
     },
     created () {
         window.addEventListener('scroll', this.onScroll);
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
     }
 };
 </script>
