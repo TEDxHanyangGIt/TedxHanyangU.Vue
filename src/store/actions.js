@@ -1,4 +1,4 @@
-import ApiMap from "../apimap";
+import ApiMap from "@/apimap";
 
 function _promise(apiFunction, payload, store, constant) {
 return new Promise((resolve, reject) => {

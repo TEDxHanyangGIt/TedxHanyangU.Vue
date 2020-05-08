@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { bus } from "../../main";
+import { bus } from "@/main";
 
 export default {
     name: "headers",
@@ -117,6 +117,9 @@ export default {
     created () {
         window.addEventListener('scroll', this.onScroll);
         window.addEventListener('resize', this.handleResize);
+        if (window.pageYOffset >= 0){
+            window.scroll(0, 0);
+        }
         this.handleResize();
     }
 };

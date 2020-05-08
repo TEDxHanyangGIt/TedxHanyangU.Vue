@@ -2,14 +2,15 @@ import Vue from "vue";
 import Router from "vue-router";
 
 //  Intro View
-import Home from "./views/Home.vue";
-import Post from "./views/Post.vue";
-import Project from "./views/Project.vue";
-import About from "./views/About.vue";
+import Home from "@views/Home.vue";
+import Post from "@views/Post.vue";
+import Project from "@views/Project.vue";
+import About from "@views/About.vue";
 
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   base: process.env.BASE_URL,
   routes: [
     {

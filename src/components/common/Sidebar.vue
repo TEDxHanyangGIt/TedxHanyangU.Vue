@@ -35,14 +35,13 @@
 </template>
 
 <script>
-import { bus } from "../../main";
-import {menuList} from "../../constant"
+import { bus } from "@/main";
+import {menuList} from "@/constant"
 
 export default {
     name:"sidebar",
     data(){
         return{
-            jaehyun: require('../../assets/img/jaehyun.jpg'),
             menuList: menuList,
             navigation: null
         }
