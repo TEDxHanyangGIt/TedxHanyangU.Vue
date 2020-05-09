@@ -1,13 +1,11 @@
 <template>
     <div>
         <Header
-        v-bind:headOnColor="headOnColor"
-        v-bind:headOffColor="headOffColor"
-        v-bind:btnOnColor="btnOnColor"
-        v-bind:btnOffColor="btnOffColor" 
+            v-bind:headOnColor="headOnColor"
+            v-bind:headOffColor="headOffColor"
+            v-bind:btnOnColor="btnOnColor"
+            v-bind:btnOffColor="btnOffColor" 
         />
-        
-        
     </div>
 </template>
 
@@ -16,16 +14,9 @@ export default {
     name: "organizer",
     data() {
         return {
-            message: "안녕하세요!"
         };
     },
     methods:{
-        messagechange(){
-            this.message = "안녕못한다"
-        }
-    },
-    created() {
-        setTimeout(this.messagechange, 3000)
     }
 }
 </script>
@@ -46,5 +37,12 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width:100vw; 
+}
+.black{
+    background-color: black;
+}
+.blue-1{
+    background-color: red;
 }
 </style>
