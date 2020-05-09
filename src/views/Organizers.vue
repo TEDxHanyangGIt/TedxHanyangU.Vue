@@ -39,10 +39,4 @@ export default {
     align-items: center;
     width:100vw; 
 }
-.black{
-    background-color: black;
-}
-.blue-1{
-    background-color: red;
-}
 </style>
