@@ -138,7 +138,6 @@ src: url(./font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
     width: 25vw;
     max-width: 500px;
   }
-
   /* ==================== color css ==================== */
   /* ==================== transition css ==================== */
   .slide-fade-enter-active {
