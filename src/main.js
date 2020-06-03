@@ -11,11 +11,20 @@ import "@mdi/font/css/materialdesignicons.css";
 // Copy
 import VueClipboard from "vue-clipboard2";
 
-// Global Setting
-import "@assets/common.css";
+// swiper
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+
+// Global Setting
+import "@assets/common.css";
 import Header from "@components/common/Header.vue";
+import VueTyperPlugin from 'vue-typer'
+
+
+// import style
+import 'swiper/css/swiper.css'
+import "@assets/common.css";
+
 
 // Event Bus
 export const bus = new Vue();
@@ -24,6 +33,8 @@ Vue.config.productionTip = false;
 Vue.component("Header", Header);
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueClipboard);
+Vue.use(VueAwesomeSwiper)
+Vue.use(VueTyperPlugin)
 
 new Vue({
   router,
