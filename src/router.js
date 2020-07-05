@@ -5,6 +5,7 @@ import Router from "vue-router";
 import Home from "@views/Home.vue";
 import About from "@views/About.vue";
 import Organizers from "@views/Organizers.vue";
+import Talk from "@views/Talk.vue";
 
 Vue.use(Router);
 
@@ -31,6 +32,11 @@ export default new Router({
       path: "/organizers",
       name: "organizers",
       component: Organizers
+    },
+    {
+      path: "/talk",
+      name: "talk",
+      component: Talk
     }
   ]
 });
