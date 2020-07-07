@@ -1,11 +1,19 @@
 <template>
-  <v-container fluid>
-    <v-row dense>
-      <v-col v-for="(talk, i) in events" :key="i" :cols="(!!talk.last) ? 12 : 4">
-        <TalkCard :talk="talk" />
-      </v-col>
-    </v-row>
-  </v-container>
+  <div>
+    <Header
+      v-bind:headOnColor="headOnColor"
+      v-bind:headOffColor="headOffColor"
+      v-bind:btnOnColor="btnOnColor"
+      v-bind:btnOffColor="btnOffColor"
+    />
+    <v-container fluid>
+      <v-row dense>
+        <v-col v-for="(talk, i) in events" :key="i" :cols="(!!talk.last) ? 12 : 4">
+          <TalkCard :talk="talk" />
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -27,6 +35,10 @@ export default {
         {
           title: "TedxHYU 발화",
           src: require("@assets/image/E16.jpg")
+        },
+        {
+          title: "TedxHYU 잇다,있다",
+          src: require("@assets/image/E15.jpg")
         },
         {
           title: "TedxHYU 잇다,있다",
