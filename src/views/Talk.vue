@@ -6,7 +6,7 @@
       v-bind:btnOnColor="btnOnColor"
       v-bind:btnOffColor="btnOffColor"
     />
-    <v-container fluid>
+    <v-container fluid style="padding: max(56px, 10vh) 5vw 30px 5vw">
       <v-row dense>
         <v-col v-for="(talk, i) in events" :key="i" :cols="(!!talk.last) ? 12 : 4">
           <TalkCard :talk="talk" />
@@ -25,7 +25,7 @@ export default {
       headOnColor: "rgba(255, 255, 255, 1)",
       headOffColor: "rgba(255, 255, 255, 0)",
       btnOnColor: "black",
-      btnOffColor: "white",
+      btnOffColor: "black",
       events: [
         {
           title: "TedxHYU Palette",

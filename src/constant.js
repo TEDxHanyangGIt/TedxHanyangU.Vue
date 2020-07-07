@@ -13,6 +13,11 @@ export const menuList = [
         name: "Organizers",
         route_name: "organizers",
         icon: "fas fa-users grey-color"
+    },
+    {
+        name: "Talks",
+        route_name: "talk",
+        icon: "fas fa-home grey-color"
     }
 ];
 
