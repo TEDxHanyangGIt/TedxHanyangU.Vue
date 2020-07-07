@@ -684,3 +684,13 @@ export const events = [
         ]
     }
 ]
+
+export const AboutText_ko1 = "TED는 Technology, Entertainment, Design의 약자로 자신이 하는 일에 열정을 가진 사람들이 'Ideas Worth Spreading(공유할 가치가 있는 아이디어)'이라는 슬로건 아래에서 18분간 발표하고 이야기를 나누는 자리입니다. TEDx의 'x'는 독립적으로 조직된 TED 이벤트를 뜻하며, TED의 기본 가이드라인을 활용하여, 자발적으로 TED를 기획하고자 하는 사람들이 모여 만드는 이벤트입니다."
+export const AboutText_en1 = "TED, short for Technology, Entertainment, Design, is a conference where speakers with passion for their work presents their ideas under the slogan 'Ideas Worth Spreading' for 18 minutes. The 'x' in TEDx represents the idea of an independent TED-like event organized by individuals under TED specific guidelines."
+export const AboutText_ko2 = "TEDxHanyangU는 한양대학교의 교육 이념인 사랑의 실천을 바탕으로, 다양한 학문의 지식을 통해 폭넓은 교육을 받은 근면정직한 교양인으로 성장하는 데 보탬이 되는 아이디어 공유의 장을 펼치고자 노력합니다. 학문적 이론에 집중하는 교양인을 넘어서, 생각하고 배운 바를 실천에 옮기는 실천적 교양인이 되고자 하는 TEDxHanyangU는 교수학습개발센터의 지원을 받아 다양한 아이디어를 가진 학우들과 학내에 'Ideas Worth Spreading'이라는 가치를 실현하고 있습니다."
+export const AboutText_en2 = "TEDxHanyangU was organized based on Hanyang University's ideals of education, Love in Action, to create a conference for sharing ideas that will help students grow into dilligent and honest beings through widening their academic persective. With support from 'The Center for Teaching & Learning', TEDxHanyangU hopes to celebrate 'Ideas Worth Spreading' and encourage fellow students to not only focus on academia but use knowledge for the good of the society."
+export const AboutText_ko3 = "Facebook, Instagram, Youtube에서도 TEDxHanyangU를 만나볼 수 있습니다. TEDxHanyangU의 새로운 소식과 연사님들의 카드뉴스를 보고싶다면 아래의 Facebook과 Instagram으로, 연사님들의 강연을 다시 보고싶다면 아래의 Youtube로 방문해주세요."
+export const AboutText_en3 = "You can also find TEDxHanyangU on Facebook, Instagram, and Youtube. If you want to see the news of TEDxHanyangU and speakers 'card news, please visit the following Facebook and Instagram. If you want to see the speakers' lecture again, please visit Youtube below."
+        
+    
+        
