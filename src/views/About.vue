@@ -10,7 +10,7 @@
       <div>
         <div colum xs10>
           <h1 class="mb-3 display-2 font-weight-black" style="color: white; margin-top: 5vw; ">About <span>TEDx</span></h1>
-            <myLine />
+            <myLine :height="40"/>
           <div style="color: white; margin: auto; width: 70vw;  margin-bottom: 3vw; margin-top: 10vw ">{{AboutText_ko1}}</div>
           <div style="color: white; margin: auto; width: 70vw;  margin-bottom: 15vw">{{AboutText_en1}}</div>
         </div>
