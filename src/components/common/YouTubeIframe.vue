@@ -1,26 +1,14 @@
 <template>
-    <div class="VideoFrame">
-        <div class="VideoBox">
-            <h1 style="color: white; margin-bottom: 5vh; margin-top: 5vh">Tedx Rules</h1>
-            <div class="Video">
-                <MyPlayer
-                    ref="p"
-                    :ytid="ytid"
-                    :yturl="yturl"
-                    :width="videoWindow.width"
-                    :height="videoWindow.height"
-                    :player-vars="{controls: 0}"
-                    @read="onPlayerReady"
-                />
-            </div>
-        </div>
-        <div class="mx-10 goAbout">
-            <div id="pendulum">
-                <v-btn x-large rounded color="white" style="font-weight: bold;" >
-                    Go About<v-icon right>fa-arrow-right</v-icon>
-                </v-btn>
-            </div>
-        </div>
+    <div class="Video">
+        <MyPlayer
+            ref="p"
+            :ytid="ytid"
+            :yturl="yturl"
+            :width="videoWindow.width"
+            :height="videoWindow.height"
+            :player-vars="{controls: 0}"
+            @read="onPlayerReady"
+        />
     </div>
 </template>
 
@@ -39,8 +27,11 @@ export default {
         }
     },
     created(){
-        window.addEventListener('resize', this.handleResize);
-        this.handleResize();
+        window.addEventListener('resize', ()=> {
+            this.handleResize();
+        });
+        this.videoWindow.width = Math.max(window.innerWidth * 0.6, 300);
+        this.videoWindow.height = Math.max(window.innerWidth *  0.3375, 168.75);
     },
     methods: {
         goAbout(){
@@ -56,8 +47,8 @@ export default {
             this.$refs.p.player.pauseVideo()
         },
         handleResize() {
-            this.videoWindow.width = Math.max(window.innerWidth * 0.6, 300);
-            this.videoWindow.height = Math.max(window.innerWidth *  0.3375, 168.75);
+            this.$refs.p.player.f.width = Math.max(window.innerWidth * 0.6, 300);
+            this.$refs.p.player.f.height = Math.max(window.innerWidth *  0.3375, 168.75);
         }
     },
     components: {

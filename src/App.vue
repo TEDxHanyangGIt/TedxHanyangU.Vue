@@ -5,7 +5,7 @@
         <router-view />
       </v-fade-transition>
       <v-layout>
-        <v-flex xs12 class="footer pt-10 pb-10">
+        <v-flex xs12 class="footer pt-5 pb-10">
           &copy; TedxHanyangU, All Rights Reserved
         </v-flex>
       </v-layout>
