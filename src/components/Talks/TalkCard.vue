@@ -4,8 +4,7 @@
       <v-card>
         <v-img
           :src="talk.src"
-          class="white--text align-end"
-          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,0.7)"
           height="50vw"
         ></v-img>
         <v-fade-transition>
@@ -39,3 +38,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.talkimg{
+  object-fit: contain;
+}
+</style>
