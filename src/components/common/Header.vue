@@ -2,7 +2,7 @@
     <v-app-bar 
         flat
         :color="headcolor"
-        style="position: fixed; transition:all ease 1s 0s; z-index:2;"
+        style="position: fixed; transition:all ease 1s 0s; z-index:10;"
     >   <v-layout row justify-space-between style="padding: 0px 20px; align-items: center;">
             <div class="headerTitle" @click="goMain()">
                 <span class="red-text">TED</span>

@@ -2,7 +2,7 @@
     <v-navigation-drawer
     v-model="navigation"
     temporary
-    style="position: fixed"
+    style="position: fixed; z-index: 20;"
 >
     <v-list-item>
         <v-list-item-content>
