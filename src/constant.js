@@ -27,6 +27,7 @@ export const TedxRuleVideo = "https://www.youtube.com/embed/QRabMAqxwaE?autoplay
 export const events = [
     {
         "no": 1,
+        "image": require("@assets/image/events/1.jpg"),
         "display": "on",
         "title": "Expect the unexpected",
         "talks": [
@@ -58,6 +59,7 @@ export const events = [
     },
     {
         "no": 2,
+        "image": require("@assets/image/events/2.jpg"),
         "display": "on",
         "title": "오감도",
         "talks": [
@@ -89,6 +91,7 @@ export const events = [
     },
     {
         "no": 3,
+        "image": require("@assets/image/events/3.jpg"),
         "display": "on",
         "title": "거짓-말(명사)",
         "talks": [
@@ -114,6 +117,7 @@ export const events = [
     },
     {
         "no": 4,
+        "image": require("@assets/image/events/4.jpg"),
         "display": "on",
         "title": "제페토 할아버지",
         "talks": [
@@ -145,6 +149,7 @@ export const events = [
     },
     {
         "no": 5,
+        "image": require("@assets/image/events/5.jpg"),
         "display": "on",
         "title": "움(UM); 트다",
         "talks": [
@@ -182,6 +187,7 @@ export const events = [
     },
     {
         "no": 6,
+        "image": require("@assets/image/events/6.jpg"),
         "display": "on",
         "title": "HANDLE",
         "talks": [
@@ -225,6 +231,7 @@ export const events = [
     },
     {
         "no": 7,
+        "image": require("@assets/image/events/7.jpg"),
         "display": "on",
         "title": "초록(GREEN)",
         "talks": [
@@ -268,6 +275,7 @@ export const events = [
     },
     {
         "no": 8,
+        "image": require("@assets/image/events/8.jpg"),
         "display": "on",
         "title": "FEVER",
         "talks": [
@@ -311,6 +319,7 @@ export const events = [
     },
     {
         "no": 9,
+        "image": require("@assets/image/events/9.jpg"),
         "display": "on",
         "title": "KNOCK",
         "notice": "제9회 TEDxHanyangU 'KNOCK'의 강연영상은 라이센스 문제로 업로드되지 못하였습니다.",
@@ -349,6 +358,7 @@ export const events = [
     },
     {
         "no": 10,
+        "image": require("@assets/image/events/10.jpg"),
         "display": "on",
         "title": "Renaissance",
         "subtitle": "사람을 재조명하다",
@@ -392,6 +402,7 @@ export const events = [
     },
     {
         "no": 11,
+        "image": require("@assets/image/events/11.jpg"),
         "display": "on",
         "title": "心 CITY",
         "talks": [
@@ -434,6 +445,7 @@ export const events = [
     },
     {
         "no": 12,
+        "image": require("@assets/image/events/12.jpg"),
         "display": "on",
         "title": "달의 뒷면",
         "talks": [
@@ -476,6 +488,7 @@ export const events = [
     },
     {
         "no": 13,
+        "image": require("@assets/image/events/13.jpg"),
         "display": "on",
         "title": "제 8요일",
         "talks": [
@@ -519,6 +532,7 @@ export const events = [
     },
     {
         "no": 14,
+        "image": require("@assets/image/events/14.jpg"),
         "display": "on",
         "title": "CRUSH",
         "subtitle": "out the old idea, on the new idea",
@@ -557,6 +571,7 @@ export const events = [
     },
     {
         "no": 15,
+        "image": require("@assets/image/events/15.jpg"),
         "display": "on",
         "title": "[잇다, 있다]:",
         "subtitle": "Connect the ideas, and we are alive",
@@ -601,7 +616,7 @@ export const events = [
     },
     {
         "no": 16,
-        "img_num": 1,
+        "image": require("@assets/image/events/16.jpg"),
         "display": "on",
         "title": "[발화:發話]",
         "subtitle": "비밀의 화원에 당신을 초대합니다.",
@@ -641,7 +656,7 @@ export const events = [
     },
     {
         "no": 17,
-        "image": [require("@assets/image/events/17_1.jpg")],
+        "image": require("@assets/image/events/17.jpg"),
         "display": "on",
         "title": "Palette",
         "subtitle": "",
