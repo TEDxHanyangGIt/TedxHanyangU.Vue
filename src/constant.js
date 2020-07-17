@@ -692,5 +692,3 @@ export const AboutText_en2 = "TEDxHanyangU was organized based on Hanyang Univer
 export const AboutText_ko3 = "Facebook, Instagram, Youtube에서도 TEDxHanyangU를 만나볼 수 있습니다. TEDxHanyangU의 새로운 소식과 연사님들의 카드뉴스를 보고싶다면 아래의 Facebook과 Instagram으로, 연사님들의 강연을 다시 보고싶다면 아래의 Youtube로 방문해주세요."
 export const AboutText_en3 = "You can also find TEDxHanyangU on Facebook, Instagram, and Youtube. If you want to see the news of TEDxHanyangU and speakers 'card news, please visit the following Facebook and Instagram. If you want to see the speakers' lecture again, please visit Youtube below."
         
-    
-        
