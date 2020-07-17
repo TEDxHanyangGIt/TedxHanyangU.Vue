@@ -2,9 +2,8 @@
     <v-app-bar 
         flat
         :color="headcolor"
-        style="position: fixed; transition:all ease 1s 0s;z-index:2;"
-    >
-        <v-layout row justify-space-between style="padding: 0px 20px; align-items: center;">
+        style="position: fixed; transition:all ease 1s 0s; z-index:2;"
+    >   <v-layout row justify-space-between style="padding: 0px 20px; align-items: center;">
             <div class="headerTitle" @click="goMain()">
                 <span class="red-text">TED</span>
                 <span class="red-text headerTitlex">x</span>
@@ -48,12 +47,12 @@ import { bus } from "@/main";
 
 export default {
     name: "headers",
-    props : ['route'],
+    props : ["headOnColor", "headOffColor", "btnOnColor", "btnOffColor"],
     // ==================== Component Variable ==================== //
     data() {
         return {
-            headcolor: "rgba(255, 255, 255, 0)",
-            btncolor: "white",
+            headcolor: this.headOffColor,
+            btncolor: this.btnOffColor,
             height_check: false,
             search_check: false,
             sidebaron: false,
@@ -96,11 +95,11 @@ export default {
 
         headerCheck(){
             if (this.height_check || this.search_check){
-                this.headcolor = "rgba(255, 255, 255, 1)"
-                this.btncolor = "black"
+                this.headcolor = this.headOnColor
+                this.btncolor = this.btnOnColor
             } else{
-                this.headcolor = "rgba(255, 255, 255, 0)"
-                this.btncolor = "white"
+                this.headcolor = this.headOffColor
+                this.btncolor = this.btnOffColor
             }
         },
         handleResize() {
@@ -125,3 +124,6 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+</style>
