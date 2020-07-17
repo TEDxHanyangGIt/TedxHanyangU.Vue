@@ -2,7 +2,6 @@
     <div>
         <Header/>
         <div class="oranizerback black">
-            <img :src="logo" class="img">
             <div style="color:white;" class="img box">
                 <div>{{message}}</div>
             </div>
@@ -15,8 +14,7 @@ export default {
     name: "organizer",
     data() {
         return {
-            message: "안녕하세요!",
-            logo: require('@assets/logo.png')
+            message: "안녕하세요!"
         };
     },
     methods:{
