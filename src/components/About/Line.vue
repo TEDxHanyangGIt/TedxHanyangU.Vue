@@ -15,7 +15,7 @@ export default {
                         pointBackgroundColor: 'rgba(0,0,0,0)',
                         borderWidth: 1,
                         pointBorderColor: 'rgba(0,0,0,0)',
-                        data: [10, 20, 15, 10, 20]
+                        data: [0, 1, 0.5, 0, 1]
                     }
                 ]
             },
@@ -43,7 +43,6 @@ export default {
     },
     mounted () {
         this.renderChart(this.datacollection, this.options)
-        setTimeout(this.resetDataNumList, 500)
     },
     methods:{
         resetDataNumList(){
@@ -57,14 +56,14 @@ export default {
             this.$data._chart.update()
         },
         getRandomArbitrary() {
-            return Math.random() * (20 - 10) + 10;
+            return Math.random();
         }
     },
     created () {
-        this.timer = setInterval(this.resetDataNumList, 1000)
+        this.timer = setInterval(this.resetDataNumList,800)
     },
     beforeDestroy () {
-      clearInterval(this.timer)
+        clearInterval(this.timer)
     }
 }
 </script>
