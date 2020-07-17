@@ -4,8 +4,8 @@
       <v-fade-transition mode="out-in">
         <router-view />
       </v-fade-transition>
-      <v-layout>
-        <v-flex xs12 class="footer pt-5 pb-10">
+      <v-layout class="footer">
+        <v-flex xs12 class="pt-10 pb-3">
           &copy; TedxHanyangU, All Rights Reserved
         </v-flex>
       </v-layout>
@@ -34,6 +34,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 .footer {
+  position: absolute;
+  bottom: 10;
   background-color: black;
   color: white;;
   text-align: center;
