@@ -1,6 +1,10 @@
  
 /* ==================== Fonts =========================*/
 @font-face {
+  font-family: 'Clip';
+  src: url("./font/Clip.ttf");
+ }
+@font-face {
   font-family: 'NanumSquare';
   font-weight: 400;
   src: url(./font/NanumSquareR.eot);

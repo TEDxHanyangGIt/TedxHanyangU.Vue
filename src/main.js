@@ -8,10 +8,9 @@ import axios from "axios"
 import vuetify from '@/plugins/vuetify';
 import "@mdi/font/css/materialdesignicons.css";
 
-// Copy
-import VueClipboard from "vue-clipboard2";
-
 // Third Party
+import VueClipboard from "vue-clipboard2";
+import Fragment from 'vue-fragment'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 import VuePlayerPlugin from 'vue-youtube-iframe-api'
@@ -30,6 +29,7 @@ export const bus = new Vue();
 
 Vue.config.productionTip = false;
 Vue.component("Header", Header);
+Vue.use(Fragment.Plugin)
 Vue.use(VueAwesomeSwiper)
 Vue.use(VueClipboard);
 Vue.use(VueTyperPlugin)
