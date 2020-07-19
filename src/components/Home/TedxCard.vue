@@ -1,66 +1,23 @@
 <template>
-<fragment>
-    <div class="tedCard tech">
-        <div class="imgBox">
-            <img :src="tech.img">
-        </div>
-        <div class="contentBox">
-            <h2>{{tech.subject}}</h2>
-            <p>{{tech.text}}</p>
-            <p>{{tech.author}}</p>
-        </div>
+<div class="tedCard" :id="data.id">
+    <div class="imgBox">
+        <img :src="data.img">
     </div>
-    <div class="tedCard enter">
-        <div class="imgBox">
-            <img :src="enter.img">
-        </div>
-        <div class="contentBox">
-            <h2>{{enter.subject}}</h2>
-            <p>{{enter.text}}</p>
-            <p>{{enter.author}}</p>
-        </div>
+    <div class="contentBox">
+        <h2>{{data.subject}}</h2>
+        <p>{{data.text}}</p>
+        <span>{{data.author}}</span>
     </div>
-    <div class="tedCard design">
-        <div class="imgBox">
-            <img :src="design.img">
-        </div>
-        <div class="contentBox">
-            <h2>{{design.subject}}</h2>
-            <p>{{design.text}}</p>
-            <p>{{design.author}}</p>
-        </div>
-    </div>
-</fragment>
+</div>
 </template>
 
 <script>
 import {VanillaTilt} from "@/plugins/vanilla-tilt.js"
 export default {
     name: "TedCard",
-    data(){
-        return{
-            tech: {
-                subject: "Technology",
-                img: require("@assets/image/tech.jpg"),
-                text: "Even though the future seems far away, it is actually beginning right now.",
-                author: "Mattie Stepanek"
-            },
-            enter: {
-                subject: "Entertainment",
-                img: require("@assets/image/tech.jpg"),
-                text: "Even though the future seems far away, it is actually beginning right now.",
-                author: "Mattie Stepanek"
-            },
-            design: {
-                subject: "Design",
-                img: require("@assets/image/tech.jpg"),
-                text: "Even though the future seems far away, it is actually beginning right now.",
-                author: "Mattie Stepanek"
-            }
-        }
-    },
+    props: ["data"],
     mounted(){
-        VanillaTilt.init(document.querySelectorAll(".tedCard"))
+        VanillaTilt.init(document.querySelector(`#${this.$props.data.id}`))
     }
 }
 </script>
@@ -68,16 +25,16 @@ export default {
 <style scoped>
 .tedCard{
     position: relative;
-    width: 25vw;
-    height: 20vw;
-    margin: 60px 0;
+    width: 20vw;
+    height: 16vw;
+    margin: 10px 0;
     background: #000;
     transform-style: preserve-3d;
     border-radius: 5vw;
 }
-.tech:hover{box-shadow: 0px 30px 80px rgba(255,0,0, 0.6);}
-.enter:hover{box-shadow: 0px 30px 80px rgba(0,255,0, 0.6);}
-.design:hover{box-shadow: 0px 30px 80px rgba(0,0,255, 0.6);}
+#tech:hover{box-shadow: 0px 30px 80px rgba(255,0,0, 0.6);}
+#enter:hover{box-shadow: 0px 30px 80px rgba(0,255,0, 0.6);}
+#design:hover{box-shadow: 0px 30px 80px rgba(0,0,255, 0.6);}
 
 .tedCard .imgBox{
     position: absolute;
@@ -95,16 +52,60 @@ export default {
 .tedCard .contentBox{
     position: absolute;
     top: 70%;
-    left: 50px;
-    right: 50px;
-    background: #ffffff;
+    left: 1vw;
+    right: 1vw;
+    background: rgba(255,255,255, 0.8);
     transform: translateZ(20px) scaleY(0);
-    padding: 40px 25px;
+    padding: 20px 15px;
     transform-origin: top;
     transition: 0.3s;
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tedCard .contentBox h2{
+    font-size: min(20px, max(10px, 3vw));
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tedCard .contentBox p{
+    font-size: min(20px, max(12px, 3vw));
+    margin-bottom: 5px;
+    font-family: "tvNEM";
+}
+
+
+.tedCard .contentBox span{
+    color: #696969;
+    font-size: min(15px, max(10px, 2vw));
+    text-align: end;
+    align-self: flex-end;
+    font-family: "tvNEB";
 }
 
 .tedCard:hover .contentBox{
     transform: translateZ(20px) scaleY(1);
+}
+@media (max-width: 1024px){
+    .tedCard{
+        width: 22.5vh;
+        height: 18vh;
+    }
+    .tedCard .contentBox{
+        width: 100%;
+        left: 70%;
+        top: 1vw;
+        bottom: 1vw;
+        transform: translateZ(20px) scaleX(0);
+        transform-origin: left;
+        padding: 10px 15px;
+    }
+    .tedCard:hover .contentBox{
+        transform: translateZ(20px) scaleX(1);
+    }
 }
 </style>
