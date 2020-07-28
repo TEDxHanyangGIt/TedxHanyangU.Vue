@@ -1,6 +1,12 @@
 <template>
     <div>
-        <Header/>
+        <Header
+        v-bind:headOnColor="headOnColor"
+        v-bind:headOffColor="headOffColor"
+        v-bind:btnOnColor="btnOnColor"
+        v-bind:btnOffColor="btnOffColor" 
+        />
+        
         <div class="oranizerback black">
             <div style="color:white;" class="img box">
                 <div>{{message}}</div>
