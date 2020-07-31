@@ -1,15 +1,13 @@
 <template>
-    <div class="Video">
-        <MyPlayer
-            ref="p"
-            :ytid="ytid"
-            :yturl="yturl"
-            :width="videoWindow.width"
-            :height="videoWindow.height"
-            :player-vars="{controls: 0}"
-            @read="onPlayerReady"
-        />
-    </div>
+    <MyPlayer
+        ref="p"
+        :ytid="ytid"
+        :yturl="yturl"
+        :width="videoWindow.width"
+        :height="videoWindow.height"
+        :player-vars="{controls: 0}"
+        @read="onPlayerReady"
+    />
 </template>
 
 <script>
@@ -17,21 +15,15 @@ import { Player } from 'vue-youtube-iframe-api'
 
 export default {
     name: "YouTubeVideo",
-    props : ["ytid", "yturl", "videoplay"],
+    props : ["ytid", "yturl", "videoplay", "videoWindow"],
     data(){
         return{
-            videoWindow:{
-                width:0,
-                height:0
-            }
         }
     },
     created(){
         window.addEventListener('resize', ()=> {
             this.handleResize();
         });
-        this.videoWindow.width = Math.max(window.innerWidth * 0.6, 300);
-        this.videoWindow.height = Math.max(window.innerWidth *  0.3375, 168.75);
     },
     methods: {
         goAbout(){
@@ -76,10 +68,6 @@ export default {
     justify-content: center;
     align-items: flex-end;
     height: calc(100vh - 64px);
-}
-.Video{
-  padding: 10px;
-  border: 1px solid white; 
 }
 .VideoBox{
     position: absolute;
