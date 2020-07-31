@@ -4,6 +4,7 @@
             <Sign />
         </swiper-slide>
         <swiper-slide class="aboudTedx">
+            <EventBack />
             <div class="aboutTed">
                 <p><span>TED</span>는 <span>T</span>echnology, <span>E</span>ntertainment, <span>D</span>esign의 약자로</p>
                 <p style="text-align: center;">자신이 하는 일에 열정을 가진 사람들이</p>
@@ -89,15 +90,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #141114;
-    background-image: 
-        linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px),
-        linear-gradient(335deg, black 23px, transparent 23px),
-        linear-gradient(155deg, black 23px, transparent 23px);
-  background-size: 58px 58px;
-  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
-  background-repeat: unset;
+    background-color: black;
 }
 .aboudTedx{
     position: relative;
@@ -123,79 +116,13 @@ export default {
 }
 .aboutTed p{
     letter-spacing: 2px;
-    font-family:"PassionItself"; 
+    font-family:"tvNE"; 
     color: white; 
-    font-size: min(40px, max(3vw, 10px));
+    font-size: min(5vw, 5vh);
     margin-bottom: 3px;
-    text-shadow: 0 0 0.6rem #808080, 0 0 1.5rem #EDEDED,
-    -0.2rem 0.1rem 1rem #D0D0D0, 0.2rem 0.1rem 1rem #B5B5B5,
-    0 -0.5rem 2rem #9A9A9A, 0 0.5rem 3rem #808080;
-    animation: shine 2s forwards, flicker 3s infinite;
+    animation: shine 2s forwards
 }
 .aboutTed p span{
     color: #ff002c;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffbfdb,
-    -0.2rem 0.1rem 1rem #ff8cad, 0.2rem 0.1rem 1rem #ff557a,
-    0 -0.5rem 2rem #ff2952, 0 0.5rem 3rem #ff002c;
-    animation: shine-red 2s forwards, flicker 3s infinite;
-}
-@keyframes shine {
-  0% {
-    color: #444444;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #808080, 0 0 1.5rem #EDEDED,
-    -0.2rem 0.1rem 1rem #D0D0D0, 0.2rem 0.1rem 1rem #B5B5B5,
-    0 -0.5rem 2rem #9A9A9A, 0 0.5rem 3rem #808080;
-  }
-}
-@keyframes shine-red {
-  0% {
-    color: #770017;
-    text-shadow: none;
-  }
-  100% {
-    color: #ff002c;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffbfdb,
-    -0.2rem 0.1rem 1rem #ff8cad, 0.2rem 0.1rem 1rem #ff557a,
-    0 -0.5rem 2rem #ff2952, 0 0.5rem 3rem #ff002c;
-  }
-}
-
-
-@keyframes flicker {
-  from {opacity: 1;}
-  4% {opacity: 0.9;}
-  6% {opacity: 0.85;}
-  8% {opacity: 0.95;}
-  10% {opacity: 0.9;}
-  11% {opacity: 0.922;}
-  12% {opacity: 0.9;}
-  14% {opacity: 0.95;}
-  16% {opacity: 0.98;}
-  17% {opacity: 0.9;}
-  19% {opacity: 0.93;}
-  20% {opacity: 0.99;}
-  24% {opacity: 1;}
-  26% {opacity: 0.94;}
-  28% {opacity: 0.98;}
-  37% {opacity: 0.93;}
-  38% {opacity: 0.5;}
-  39% {opacity: 0.96;}
-  42% {opacity: 1;}
-  44% {opacity: 0.97;}
-  46% {opacity: 0.94;}
-  56% {opacity: 0.9;}
-  58% {opacity: 0.9;}
-  60% {opacity: 0.99;}
-  68% {opacity: 1;}
-  70% {opacity: 0.9;}
-  72% {opacity: 0.95;}
-  93% {opacity: 0.93;}
-  95% {opacity: 0.95;}
-  97% {opacity: 0.93;}
-  to {opacity: 1;}
 }
 </style>

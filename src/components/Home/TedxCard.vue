@@ -13,6 +13,7 @@
 
 <script>
 import {VanillaTilt} from "@/plugins/vanilla-tilt.js"
+
 export default {
     name: "TedCard",
     props: ["data"],
@@ -32,6 +33,7 @@ export default {
     transform-style: preserve-3d;
     border-radius: 5vw;
 }
+
 #tech:hover{box-shadow: 0px 30px 80px rgba(255,0,0, 0.6);}
 #enter:hover{box-shadow: 0px 30px 80px rgba(0,255,0, 0.6);}
 #design:hover{box-shadow: 0px 30px 80px rgba(0,0,255, 0.6);}
@@ -44,6 +46,7 @@ export default {
     height: 100%;
 }
 .tedCard .imgBox img{
+    opacity: 0.7;
     width: inherit;
     height: inherit;
     object-fit: cover;
@@ -67,15 +70,17 @@ export default {
 }
 
 .tedCard .contentBox h2{
-    font-size: min(20px, max(10px, 3vw));
-    font-weight: bold;
+    font-family: "tvNE";
+    font-size: min(30px, max(20px, 3vw));
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
 .tedCard .contentBox p{
+    font-family: "NanumSquare";
+    font-weight: 400;
     font-size: min(20px, max(12px, 3vw));
     margin-bottom: 5px;
-    font-family: "tvNEM";
 }
 
 
@@ -84,12 +89,13 @@ export default {
     font-size: min(15px, max(10px, 2vw));
     text-align: end;
     align-self: flex-end;
-    font-family: "tvNEB";
+    font-family: "tvNE";
 }
 
 .tedCard:hover .contentBox{
     transform: translateZ(20px) scaleY(1);
 }
+
 @media (max-width: 1024px){
     .tedCard{
         width: 22.5vh;
@@ -108,4 +114,5 @@ export default {
         transform: translateZ(20px) scaleX(1);
     }
 }
+
 </style>
