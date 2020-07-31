@@ -68,7 +68,23 @@ src: url(./font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
       url(./font/NanumSquareL.ttf) format('truetype');
 }
  
+@font-face {
+  font-family: 'Roboto-Black';
+  font-weight: 700;
+  src: url("./font/Roboto-Black.ttf");
+}
 
+@font-face {
+  font-family: 'billabong';
+  font-weight: 700;
+  src: url("./font/billabong.otf");
+}
+
+@font-face {
+  font-family: 'FACEBOLF';
+  font-weight: 700;
+  src: url("./font/FACEBOLF.OTF");
+}
 /* ==================== common css ==================== */
   a {
     text-decoration:none;
