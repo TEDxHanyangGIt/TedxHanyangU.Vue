@@ -7,11 +7,7 @@
         v-bind:btnOffColor="btnOffColor" 
         />
         
-        <div class="oranizerback black">
-            <div style="color:white;" class="img box">
-                <div>{{message}}</div>
-            </div>
-        </div>
+        
     </div>
 </template>
 
