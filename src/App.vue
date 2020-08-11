@@ -34,6 +34,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 .footer {
+  width: 100vw;
   position: absolute;
   bottom: 10;
   background-color: black;

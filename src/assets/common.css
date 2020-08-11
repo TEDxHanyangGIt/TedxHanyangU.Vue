@@ -138,26 +138,7 @@ src: url(./font/NanumSquareL.eot?#iefix) format('embedded-opentype'),
     width: 25vw;
     max-width: 500px;
   }
-  /* ==================== main image ==================== */
-  .main_image{
-    display: inline-flex;
-    justify-content: space-around;
-    height: 100vh;
-    background-color: black;
-    width: 100vw;
-  }
-  .potato_img {
-    margin: 8vh 1vw 8vh 30%;
-    width: auto;
-    height: calc(-16vh + 400px);
-    border-style: none;
-  }
-  .word_img {
-    margin:22vh 30% 8vh 1vw;
-    width: auto;
-    height: calc(-30vh + 400px);
-    border-style: none;
-  }
+
   /* ==================== color css ==================== */
   /* ==================== transition css ==================== */
   .slide-fade-enter-active {
