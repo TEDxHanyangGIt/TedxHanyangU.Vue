@@ -1,9 +1,9 @@
 <template>
     <v-navigation-drawer
-    v-model="navigation"
-    temporary
-    style="position: fixed; z-index: 20;"
->
+        v-model="navigation"
+        temporary
+        style="position: fixed; z-index: 20;"
+    >
     <v-list-item>
         <v-list-item-content>
             <v-list-item-title>

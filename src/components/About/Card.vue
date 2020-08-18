@@ -1,5 +1,5 @@
 <template>
-    <div class="grid__item">
+    <div class="cardBox">
         <div class="card">
             <img class="card__img" :src="sns.img" alt="youtube_img">
             <div class="card__content">
@@ -44,11 +44,10 @@ export default {
 }
 
 
-.grid__item {
+.cardBox {
   z-index: 100;
   background-color: #fff;
-  border-radius: 0.4rem;
-  overflow: hidden;
+  margin: 20px;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
@@ -61,18 +60,28 @@ export default {
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
 
-.card__img {
+.cardImg {
   display: block;
-  width: 100%;
-  height: 15rem;
+  width: 32vh;
+  height: 18vh;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.card__content {
+@media screen and (max-width: 900px){
+    .cardBox{
+      width: 80vw;
+    }
+    .cardImg {
+        width: 80vw;
+        height: 45vw;
+    }
+}
+
+.cardContent {
   padding: 1rem 1rem;
 }
-.card__header {
+.cardHeader {
   font-size: 1.5rem;
   font-weight: 500;
   color: #0d0d0d;
@@ -108,21 +117,5 @@ export default {
 }
 .card__btn:hover span, .card__btn:active span {
   margin-left: 1.5rem;
-}
-
-
-@media screen and (max-width: 890px){
-.grid {
-  display: flex;
-  flex-direction: column;
-  
-}
-}
-
-@media screen and (max-width: 500px){
-.grid__item {
-  font-size: 0.7rem;
-}
-
 }
 </style>

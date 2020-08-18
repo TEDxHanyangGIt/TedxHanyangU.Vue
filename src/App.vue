@@ -5,7 +5,7 @@
         <router-view />
       </v-fade-transition>
       <v-layout class="footer">
-        <v-flex xs12 class="pt-10 pb-3">
+        <v-flex xs12 class="pt-10 pb-10">
           &copy; TedxHanyangU, All Rights Reserved
         </v-flex>
       </v-layout>
@@ -32,13 +32,13 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 .footer {
   width: 100vw;
-  position: absolute;
-  bottom: 10;
+  bottom: 0;
   background-color: black;
-  color: white;;
+  color: white;
   text-align: center;
 }
 </style>

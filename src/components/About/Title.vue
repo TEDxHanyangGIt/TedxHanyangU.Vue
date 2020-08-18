@@ -109,7 +109,7 @@ export default {
 
 .f4{
   top: 240px;
-  right: 20px;
+  right: 70px;
   animation:dark .2s linear;
   animation-fill-mode:forwards;
   font-size:150px;

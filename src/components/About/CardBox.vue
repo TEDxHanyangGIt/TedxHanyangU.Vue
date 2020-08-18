@@ -47,17 +47,22 @@ export default {
 
 <style scoped>
 .grid {
-  justify-content: center;
-  align-content: center;
-  padding: 6rem;
-  background-color: white;
-  font-family: 'Gothic A1', sans-serif;
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  width: 100%;
-  grid-gap: 6rem;
-  grid-auto-rows: auto;
-  align-items: start;
+    padding: 5vh 5vw;
+    background-color: white;
+    font-family: 'Gothic A1', sans-serif;
+    box-sizing: border-box;
+    display: flex;;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw !important;
 }
+
+@media screen and (max-width: 900px){
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 </style>

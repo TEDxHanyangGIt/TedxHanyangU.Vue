@@ -3,8 +3,8 @@
         <h1 class="mb-3" style="color: white; margin-top: 5vw;">{{whitetxt1}}<span class="RT">{{redtxt}}</span>{{whitetxt2}}</h1>
         <myLine :height="30"/>
         <v-flex :class="hasCard ? 'aboutText':  `aboutText ${`rounded`}`"> 
-            <div style="color: black; margin: auto; width: 70%;  margin-bottom: 3vw; margin-top: 10vw ">{{kotxt}}</div>
-            <div style="color: black; margin: auto; width: 70%;  margin-bottom: 15vw">{{entxt}}</div>
+            <div class="kotxt">{{kotxt}}</div>
+            <div class="entxt">{{entxt}}</div>
             <CardBox v-if="hasCard" />
         </v-flex>
     </div>
@@ -24,32 +24,42 @@ export default {
 </script>
 
 <style scoped>
-
-Header{
-  background-color: black;
-}
-section {
-  background-color: black;
-  height: 1000px;  
-}
 .RT{
   color: red;
   margin: 0px 20px;
 }
-.mb-3 {
+.InfoTitle {
   font-family: 'Permanent Marker', cursive;
   font-size: 50px;
+  color: white; 
+  margin-top: 5vw;
 }
 
 .aboutText{
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
   box-shadow: 5px 5px 5px 5px gray;
   font-size: larger;
   font-family: 'Gothic A1', sans-serif;
 }
 
+.aboutText div{
+    color: black;
+    font-weight: 700;
+    font-family: "NanumSquare";
+    width: min(1200px, max(70%, 300px));
+    font-size: min(20px, max(10px, 3vw));  
+    margin-bottom: 40px;
+}
+
+.kotxt{
+  margin-top: 60px
+}
+.entxt{
+  margin-bottom: 60px !important;
+}
 
 .rounded{
     border-bottom-left-radius: 5vw;
