@@ -1,17 +1,15 @@
 <template>
-
-    <div class="styled-select">
-            <select>
-                <option>전체보기</option>
-                <option>디렉터</option>
-                <option>대외협력팀</option>
-                <option>디자인팀</option>
-                <option>홍보팀</option>
-                <option>연사섭외팀</option>
-                <option>기술팀</option>
-                
-            </select>
-    </div>  
+    <v-container fluid style="margin-top: 50px">
+        <v-row align="center" justify="end">
+            <v-col class="d-flex" cols="12" sm="6">
+                <v-select
+                :items="items"
+                label="Select Team"
+                solo
+                ></v-select>
+            </v-col>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
@@ -19,11 +17,18 @@ export default {
     name:"selects",
     data() {
         return {
-
+            items: [
+                "전체보기",
+                "디렉터",
+                "대외협력팀",
+                "디자인팀",
+                "홍보팀",
+                "연사섭외팀",
+                "기술팀"
+            ]
         }
-    },
+    }
 }
-
 </script>
 
 <style scoped>

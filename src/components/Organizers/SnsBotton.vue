@@ -1,7 +1,7 @@
 <template>
-    <div class="profile-social-media-container" :id="data.id">
-        <div class="social-media"> 
-            <img :src="data.img">
+    <div class="profile-social-media-container">
+        <div class="social-media">
+            <img :src="img">
             <button></button>
         </div>    
     </div>                
@@ -10,11 +10,14 @@
 
 <script>
 export default {
-    name: "Sns",
-    props: ["data"]
-    
+    name: "SnsBotton",
+    props: ["sns"],
+    data() {
+        return {
+            img: this.sns.snstype === "FaceBook" ? require("@assets/image/iconFacebook.png") : (this.sns.snstype === "Youtube" ? require("@assets/image/iconYoutube.png") : require("@assets/image/iconInstagram.png"))
         }
-    
+    }
+}
 </script>
 
 <style scoped>

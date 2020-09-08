@@ -1,25 +1,30 @@
 <template>
-    <div class="card-border" :id="data.id">
+    <div class="card-border">
         <div class="card">
-            <img :src="data.img">
-                <div class="content">
-                    <h2 class="title">{{ data.name }}</h2>
-                    <p class="text">{{data.comment }} </p>
-                    <SnsBox />
+            <img :src="organizer.img">
+            <div class="content">
+                <h2 class="title">{{ organizer.name }}</h2>
+                <p class="text">{{organizer.comment }} </p>
+                <div class="snsBox">
+                    <SnsBotton
+                        v-for="sns in organizer.snsList"
+                        :key="`${organizer.id}-${sns.snstype}`"
+                        :sns="sns" 
+                    />
                 </div>
-        </div>`
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import SnsBox from '@components/Organizers/SnsBox'
+import SnsBotton from '@components/Organizers/SnsBotton'
 export default {
-    name: "profile",
-    compoents: {
-        SnsBox: SnsBox,   
-    },
-    props: ["data"]
-
+    name: "Profile",
+    props: ["organizer"],
+    components: {
+        SnsBotton: SnsBotton
+    }
 }
 </script>
 
@@ -53,7 +58,7 @@ body{
     color: whitesmoke;
     cursor: pointer;
     overflow: hidden;
-    z-index: 10;
+    z-index: 2;
     pointer-events: auto;
 }
 
@@ -61,7 +66,7 @@ body{
     position: relative;
     width: 270px;
     height: 350px;
-    z-index: 9;
+    z-index: 1;
     pointer-events: none;
     margin-bottom:5rem; 
 }
@@ -214,4 +219,9 @@ body{
     z-index: 2;
 }
 
+.snsBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 </style>

@@ -1,23 +1,21 @@
 <template>
-    <div>
+    <fragment>
         <Header
             v-bind:headOnColor="headOnColor"
             v-bind:headOffColor="headOffColor"
             v-bind:btnOnColor="btnOnColor"
             v-bind:btnOffColor="btnOffColor" 
         />
-        <open />  
-        <selects />
-        <crews />
-        <!-- <timeline /> -->
-    </div>
+        <div id="organizers">
+            <TopTitle />
+            <OrganizerBoard />
+        </div>
+    </fragment>
 </template>   
 
 <script>
-import crews from '@components/Organizers/crews'
-// import timeline from '@components/Organizers/timeline'
-import open from '@components/Organizers/open'
-import selects from '@components/Organizers/selects'
+import TopTitle from '@components/Organizers/TopTitle'
+import OrganizerBoard from '@components/Organizers/OrganizerBoard'
 
 export default {
     name: "Organizers",
@@ -30,11 +28,8 @@ export default {
         }
     },
     components: {
-        open: open,
-        crews: crews,
-        // timeline: timeline,
-        selects: selects
-        
+        TopTitle: TopTitle,
+        OrganizerBoard: OrganizerBoard
     }
 };
 </script>
