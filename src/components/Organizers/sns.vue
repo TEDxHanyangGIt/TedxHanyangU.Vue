@@ -10,15 +10,11 @@
 
 <script>
 export default {
-    name: "sns",
-    props: ["data"],
-    methods: {
-        goSNS() {
-            window.open(this.sns.snsurl,this.sns.snstype);
-            return false;
+    name: "Sns",
+    props: ["data"]
+    
         }
-    }
-}
+    
 </script>
 
 <style scoped>

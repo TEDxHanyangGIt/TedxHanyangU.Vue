@@ -1,44 +1,24 @@
 <template>
-    <div>
-        <div class="frame">
-            <div class="card-border">
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">{{ crew_name }}</h2>
-                        <p class="text">{{crew_comment }} </p>
-                        <snsbox></snsbox>
-                    </div>
+    <div class="card-border" :id="data.id">
+        <div class="card">
+            <img :src="data.img">
+                <div class="content">
+                    <h2 class="title">{{ data.name }}</h2>
+                    <p class="text">{{data.comment }} </p>
+                    <SnsBox />
                 </div>
-            </div>
-            <div class="card-border">
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">{{ crew_name }}</h2>
-                        <p class="text">{{crew_comment }} </p>
-                        <snsbox></snsbox>
-                    </div>
-                </div>
-            </div>
-        </div> 
+        </div>`
     </div>
-    
-    
 </template>
 
 <script>
-import snsbox from '@components/Organizers/snsbox'
+import SnsBox from '@components/Organizers/SnsBox'
 export default {
     name: "profile",
-    // props: ["crew"],
     compoents: {
-        snsbox: snsbox
+        SnsBox: SnsBox,   
     },
-    data(){
-        return{
-            crew_name: "crew 1",
-            crew_comment: "new comment 밑에 sns box 안올라오는 문제"
-        }
-    }
+    props: ["data"]
 
 }
 </script>
@@ -64,17 +44,6 @@ body{
     min-height: 100vh;
     background-image: radial-gradient( circle farthest-corner at 1.3% 2.8%,  rgba(252, 250, 250,1) 0%, rgba(250,250,250,1) 100.2% );}
 
-.frame {
-    padding-top: 15rem;
-    padding-bottom: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 900px;
-    margin-left: 300px;
-}
-
 .card {  
     position: relative;
     display: flex;
@@ -94,7 +63,7 @@ body{
     height: 350px;
     z-index: 9;
     pointer-events: none;
-    
+    margin-bottom:5rem; 
 }
 
 
@@ -118,17 +87,14 @@ body{
 }
 
 
-.card-border:nth-child(1) .card{
-    background-image: url("https://i.pinimg.com/originals/01/68/48/0168484e22bdec24ea0ce2cc2ed9fad8.jpg ");
-    background-size: 100% 100%;
+.card-border .card img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 270px;
+    height: 350px;
+    position: absolute;
+    object-fit: cover;
 }
-
-.card-border:nth-child(2) .card{
-    background-image: url("https://i.pinimg.com/originals/01/68/48/0168484e22bdec24ea0ce2cc2ed9fad8.jpg ");
-    background-size: 100% 100%;
-}
-
-
 
 .card-border:before {
     border-left: 6px solid #D50000;

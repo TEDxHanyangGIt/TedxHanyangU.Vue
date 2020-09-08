@@ -8,14 +8,14 @@
         />
         <open />  
         <selects />
-        <profile />
-        <timeline />
+        <crews />
+        <!-- <timeline /> -->
     </div>
 </template>   
 
 <script>
-import profile from '@components/Organizers/profile'
-import timeline from '@components/Organizers/timeline'
+import crews from '@components/Organizers/crews'
+// import timeline from '@components/Organizers/timeline'
 import open from '@components/Organizers/open'
 import selects from '@components/Organizers/selects'
 
@@ -31,8 +31,8 @@ export default {
     },
     components: {
         open: open,
-        profile: profile,
-        timeline: timeline,
+        crews: crews,
+        // timeline: timeline,
         selects: selects
         
     }

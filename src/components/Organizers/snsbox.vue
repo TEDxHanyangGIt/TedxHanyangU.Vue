@@ -1,6 +1,6 @@
 <template>
     <div>
-        <sns
+        <Sns
             v-for="data in snslist"
             :key="data.id"
             :data="data" 
@@ -9,34 +9,34 @@
 </template>
 
 <script>
-import sns from '@components/Organizers/sns'
+import Sns from "@components/Organizers/Sns"
 export default {
-    name: "snsbox",
+    name: "SnsBox",
     data(){
         return{
             snslist: [
                 {
                     id:"FaceBook",
                     img:require("@assets/image/iconFacebook.png"),
-                    snsurl: "http://",
+                    snsurl: "https://www.facebook.com/TEDxHanyangU/",
                     snstype:"FaceBook"
                 },
                 {
                     id:"Youtube",
                     img:require("@assets/image/iconYoutube.png"),
-                    snsurl: "http://",
+                    snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
                     snstype:"Youtube"
                 },{
                     id:"Instagram",
                     img:require("@assets/image/iconInstagram.png"),
-                    snsurl: "http://",
+                    snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
                     snstype:"Instagram"
                 },
             ]
         }
     },
     components: {
-        sns: sns
+        Sns: Sns
     }
 }
 </script>

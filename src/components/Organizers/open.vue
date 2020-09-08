@@ -3,7 +3,7 @@
     <div class="overlay">
         <h1>organizers</h1>
         <h2>tedxhanyang 18th</h2>
-        <p>?????소갯말</p>
+        <p></p>
     </div>
 </div>
 </template>
