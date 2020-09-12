@@ -1,7 +1,7 @@
 <template>
     <div colum xs10>
         <h1 class="mb-3" style="color: white; margin-top: 5vw;">{{whitetxt1}}<span class="RT">{{redtxt}}</span>{{whitetxt2}}</h1>
-        <!-- <myLine :height="30"/> -->
+        <myLine :height="30"/>
         <v-flex :class="hasCard ? 'aboutText':  `aboutText ${`rounded`}`"> 
             <div style="color: black; margin: auto; width: 70%;  margin-bottom: 3vw; margin-top: 10vw ">{{kotxt}}</div>
             <div style="color: black; margin: auto; width: 70%;  margin-bottom: 15vw">{{entxt}}</div>
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-// import myLine from '@components/About/Line'
+import myLine from '@components/About/Line'
 import CardBox from '@components/About/CardBox'
 export default {
     name: "AboutText",
     props: ["kotxt", "entxt", "whitetxt1", "redtxt", "whitetxt2", "hasCard"],
     components:{
-        // myLine:myLine,
+        myLine:myLine,
         CardBox: CardBox
     }
 }
