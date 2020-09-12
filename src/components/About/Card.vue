@@ -4,10 +4,14 @@
             <img class="card__img" :src="sns.img" alt="youtube_img">
             <div class="card__content">
                 <h1 class="card__header" style="font-family: Roboto-Black; font-size: 35px">{{sns.sns}}</h1>
-                <button class="card__btn" type="button" a herf="#" @onclick="goSNS()">
-                    {{sns.gossns}}
-                    <span>&rarr;</span>
-                </button>
+                <v-btn
+                  rounded
+                  x-large
+                  :elevation="5"
+                  @click="goSNS"
+                >
+                  {{sns.gossns}}<span style="margin-left: 10px;">&rarr;</span>
+                </v-btn>
             </div>
         </div>
     </div>
@@ -19,7 +23,8 @@ export default {
     props: ["sns"],
     methods: {
         goSNS(){
-            window.open(this.sns.snsurl,this.sns.snstype); 
+            console.log(this.sns)
+            window.open(this.sns.snsurl);
             return false;
         }
     }
@@ -47,9 +52,10 @@ export default {
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
-
-  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
+
 .grid__item:hover {
   transform: translateY(-0.5%);
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
@@ -60,10 +66,11 @@ export default {
   width: 100%;
   height: 15rem;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .card__content {
   padding: 1rem 1rem;
-
 }
 .card__header {
   font-size: 1.5rem;

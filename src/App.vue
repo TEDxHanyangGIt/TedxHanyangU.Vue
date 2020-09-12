@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-    <v-content>
+    <v-main>
       <v-fade-transition mode="out-in">
         <router-view />
       </v-fade-transition>
@@ -9,7 +9,7 @@
           &copy; TedxHanyangU, All Rights Reserved
         </v-flex>
       </v-layout>
-    </v-content>
+    </v-main>
     <Sidebar />
   </v-app>
 </template>

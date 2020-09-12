@@ -6,14 +6,14 @@
       v-bind:btnOnColor="btnOnColor"
       v-bind:btnOffColor="btnOffColor" 
     />
-    <!-- <Back /> -->
+    <Back />
     <Title />
     <Content />
   </div>
 </template>
 
 <script>
-// import Back from '@components/About/Back'
+import Back from '@components/About/Back'
 import Title from '@components/About/Title'
 import Content from '@components/About/Content'
 
@@ -30,7 +30,7 @@ export default {
   components: {
     Title:Title,
     Content:Content,
-    // Back: Back
+    Back: Back
   }
 };
 </script>
