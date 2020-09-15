@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name:"selects",
+    name:"Selects",
     data() {
         return {
             items: [

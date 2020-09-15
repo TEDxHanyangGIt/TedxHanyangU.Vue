@@ -1,58 +1,33 @@
 <template>
-    <div class="profile-social-media-container">
-        <div class="social-media">
-            <img :src="img">
-            <button></button>
-        </div>    
-    </div>                
-    
+    <div class="snsbox">
+        <v-btn 
+            icon 
+            @click="goSNS">
+                <img class="sns_img" :src="sns.snsimg">    
+        </v-btn> 
+    </div>
 </template>
 
 <script>
 export default {
     name: "SnsBotton",
     props: ["sns"],
-    data() {
-        return {
-            img: this.sns.snstype === "FaceBook" ? require("@assets/image/iconFacebook.png") : (this.sns.snstype === "Youtube" ? require("@assets/image/iconYoutube.png") : require("@assets/image/iconInstagram.png"))
+    methods: {
+        goSNS(){
+            window.open(this.sns.snsurl);
+            return false;
         }
     }
 }
 </script>
 
 <style scoped>
-.profile-social-media-container {
+.snsbox {
+    width: 60px;
+    text-align: center;
+}
+.sns_img {
     width: 100%;
-    margin: 0px auto;
-}
-
-.profile-social-media-container ul {
-    width: 50%;
-    margin: 0px auto;
-    padding: 0px;
-    list-style: none;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-media {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
-    cursor: pointer;
-    transform: translateY(0px);
-    transition: all 0.2s ease;
-}
-
-.social-media img {
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-
-.social-media:hover {
-    transform: translateY(-2.5px);
+    height: 30px;
 }
 </style>

@@ -3,13 +3,13 @@
         <div class="card">
             <img :src="organizer.img">
             <div class="content">
-                <h2 class="title">{{ organizer.name }}</h2>
+                <h2 class="title">{{ organizer.name }}<span>/{{ organizer.team }}</span></h2>
                 <p class="text">{{organizer.comment }} </p>
                 <div class="snsBox">
-                    <SnsBotton
+                    <SnsBotton 
                         v-for="sns in organizer.snsList"
-                        :key="`${organizer.id}-${sns.snstype}`"
-                        :sns="sns" 
+                        :key="`${organizer.id}-${sns.snstype}-${sns.snsimg}`"
+                        v-bind:sns="sns" 
                     />
                 </div>
             </div>
@@ -145,7 +145,7 @@ body{
 }
 
 .content:after{
-    z-index: -1g;
+    z-index: -1;
     content: '';
     display: block;
     position: absolute;
@@ -209,6 +209,11 @@ body{
 .title{
     width: 100%;
     font-size: 1.6rem;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+span {
+    font-size: small;
     z-index: 2;
     margin-bottom: 1rem;
 }

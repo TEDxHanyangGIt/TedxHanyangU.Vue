@@ -20,201 +20,721 @@ export default {
             organizerList: [
                 {
                     id: "1",
-                    name: "selena",
+                    team: "디렉터",
+                    name: "김윤우",
                     img:  "https://t1.daumcdn.net/liveboard/kncom/10889702ee3246e990f427f5e4c5bc79.JPG",
-                    comment: "ice cream",
+                    comment: "드디어 해냈다만어람농라ㅗ만ㅇ뢈노ㅓㅇㄹ뫙럼닝로ㅓㅣ농림노얼",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "2",
-                    name: "gomez",
+                    team: "연사섭외팀",
+                    name: "김태훈",
                     img:  "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F0313AE4251CE463C26",
-                    comment: "퀸카",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "3",
-                    name: "selena gomez",
-                    img: "https://photo.newsen.com/news_photo/2018/02/08/201802081639420410_1.jpg",
-                    comment: "청멜빵도 잘 어울려",
+                    team: "연사섭외팀",
+                    name: "유아형 ",
+                    img: "https://t1.daumcdn.net/liveboard/kncom/10889702ee3246e990f427f5e4c5bc79.JPG",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "4",
-                    name: "ari",
+                    team: "연사섭외팀",
+                    name: "이예운",
                     img:  "https://image.chosun.com/sitedata/image/201809/15/2018091501155_0.jpg",
-                    comment: "over the rainbow",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "5",
-                    name: "taylor",
+                    team: "연사섭외팀",
+                    name: "윤채원",
                     img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSrkyjilptT9HlxB7U7aDmYFUChVq-uB71LLw&usqp=CAU",
-                    comment: "sweet",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "6",
-                    name: "lose you love me",
+                    team: "연사섭외팀",
+                    name: "임예진",
                     img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSnrAvW4WYlXZ2RmmCdVPCdgO7G_Ow8mkqJhw&usqp=CAU",
-                    comment: "rare앨범 띵반",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "7",
-                    name: "루루루",
+                    team: "연사섭외팀",
+                    name: "최지승",
                     img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQQ5xdJgXm8DXfd2foyyfvRZqh209Tez-sJg&usqp=CAU",
-                    comment: "back to u",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "8",
-                    name: "camila",
+                    team: "행사기획팀",
+                    name: "박진석",
                     img:  "https://file3.instiz.net/data/file3/2018/02/03/e/c/d/ecd1be6a794eb9683d8cde7baa7f6d22.jpg",
-                    comment: "cabello",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "9",
-                    name: "윤아",
+                    team: "행사기획팀",
+                    name: "김연성",
                     img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
-                    comment: "영화관가고 시펑",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 },
                 {
                     id: "10",
-                    name: "나오미 스콧",
+                    team: "행사기획팀",
+                    name: "김빈",
                     img: "https://lh3.googleusercontent.com/proxy/ntO4nd7d_xczOIYhHoRflCUgNRG3PY-GCWgH2xFLtlmflJ4_qoAet5uDrb9M0xLKPudaN1Yi25qRFRczxJnbF8LBFaw23t2h2R4IFHMjga274p-T99-fdZ0ZpvQLqGElL5bkS1F_Wao7yPjeROFXhOqxyNzzc5TZfra5XGypTPsXMUoSHRRnCX7wDSLnREWVcRIRnN1aD6M6QhF3XfE6uRKykEPb1oAUXJk5a5aKamd--uSaRl--1iDY-fS9uH7CfDZTUGxX0JXUSFIbnSQss7-feyiPrvQbCSVb3A",
-                    comment: "어 홀뉴 월드~~~~노원 텔 어쩌구 드리밍",
+                    comment: "",
                     snsList: [
                         {
                             snsurl: "https://www.facebook.com/TEDxHanyangU/",
-                            snstype:"FaceBook"
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
                         },
                         {
                             snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
-                            snstype:"Youtube"
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
                         },
                         {
                             snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
-                            snstype:"Instagram"
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "11",
+                    team: "행사기획팀",
+                    name: "박주현",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "12",
+                    team: "행사기획팀",
+                    name: "김은영",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "13",
+                    team: "행사기획팀",
+                    name: "이현정",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "14",
+                    team: "대외협력팀",
+                    name: "정다윤",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "15",
+                    team: "대외협력팀",
+                    name: "임나미",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "16",
+                    team: "대외협력팀",
+                    name: "배혜원",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "17",
+                    team: "대외협력팀",
+                    name: "문우리",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "18",
+                    team: "대외협력팀",
+                    name: "김태훈",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "19",
+                    team: "홍보팀",
+                    name: "정인영",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "20",
+                    team: "홍보팀",
+                    name: "조수진",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "21",
+                    team: "홍보팀",
+                    name: "김태완",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "22",
+                    team: "홍보팀",
+                    name: "유호준",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "23",
+                    team: "홍보팀",
+                    name: "이예린",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "24",
+                    team: "디자인팀",
+                    name: "서채연",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "25",
+                    team: "디자인팀",
+                    name: "손현영",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "26",
+                    team: "디자인팀",
+                    name: "이성준",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "27",
+                    team: "디자인팀",
+                    name: "박소은",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "28",
+                    team: "디자인팀",
+                    name: "서영준",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "29",
+                    team: "기술팀",
+                    name: "백재현",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
+                        }
+                    ]
+                },
+                {
+                    id: "30",
+                    team: "기술팀",
+                    name: "김승희",
+                    img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTT6M18V5h-8lHdp86Kdkr4_jo6DlfrKv_J5Q&usqp=CAU",
+                    comment: "",
+                    snsList: [
+                        {
+                            snsurl: "https://www.facebook.com/TEDxHanyangU/",
+                            snstype:"FaceBook",
+                            snsimg:require("@assets/image/iconFacebook.png")
+                        },
+                        {
+                            snsurl: "https://www.youtube.com/results?search_query=tedxhanyangu",
+                            snstype:"Youtube",
+                            snsimg: require("@assets/image/iconYoutube.png")
+                        },
+                        {
+                            snsurl: "https://www.instagram.com/tedxhanyangu_2020/",
+                            snstype:"Instagram",
+                            snsimg:require("@assets/image/iconInstagram.png")
                         }
                     ]
                 }
