@@ -7,7 +7,7 @@ export const menuList = [
     {
         name: "About",
         route_name: "about",
-        icon: "fas fa-home grey-color"
+        icon: "fas fa-lightbulb grey-color"
     },
     {
         name: "Organizers",
@@ -17,7 +17,12 @@ export const menuList = [
     {
         name: "Talks",
         route_name: "talk",
-        icon: "fas fa-home grey-color"
+        icon: "fas fa-comment grey-color"
+    },
+    {
+        name: "Sponsor",
+        route_name: "sponsor",
+        icon: "fas fa-address-book grey-color"
     }
 ];
 

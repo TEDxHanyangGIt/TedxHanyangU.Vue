@@ -6,6 +6,8 @@ import Home from "@views/Home.vue";
 import About from "@views/About.vue";
 import Organizers from "@views/Organizers.vue";
 import Talk from "@views/Talk.vue";
+import Sponsor from "@views/Sponsor.vue";
+
 
 Vue.use(Router);
 
@@ -37,6 +39,11 @@ export default new Router({
       path: "/talk",
       name: "talk",
       component: Talk
+    },
+    {
+      path: "/sponsor",
+      name: "sponsor",
+      component: Sponsor
     }
   ]
 });
