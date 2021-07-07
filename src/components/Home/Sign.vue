@@ -1,15 +1,15 @@
 <template>
-<fragment>
-    <div class="sign" style="margin-right: 25vw">
-        <span class="fast-flicker">W</span>elcome to
+<div class="signBox">
+    <div class="sign line1">
+        <span>W</span>elcome to
     </div>
-    <div class="sign" style="margin-right: 5vw">
-        <span>Tedx</span> <span>H</span>anyang
+    <div class="sign line2">
+        <span>Tedx</span> <span>H</span>anyang<span>U</span>
     </div>
-    <div class="sign" style="margin-left: 30vw">
-        <span class="flicker">U</span>niversity
+    <div class="sign line3">
+        ideas worth <span>spreading</span>
     </div>
-</fragment>
+</div>
 </template>
 
 <script>
@@ -22,58 +22,69 @@ export default {
 }
 </script>
 <style scoped>
+.signBox{
+  position: relative;
+  width: 90vw;
+  max-width: 800px;
+  height: 50vh;
+}
 .sign{
+    position: absolute;
     font-family: "tvNE";
-    font-size: min(10vw, 10vh);
     font-weight: 700;
-    color: white;
     text-align: center;
     letter-spacing: 2px;
-    background-image: radial-gradient(
-        ellipse 50% 35% at 50% 50%,
-        black,
-        transparent
-    );
-    text-shadow: 0 0 0.6rem #808080, 0 0 1.5rem #EDEDED,
-    -0.2rem 0.1rem 1rem #D0D0D0, 0.2rem 0.1rem 1rem #B5B5B5,
-    0 -0.5rem 2rem #9A9A9A, 0 0.5rem 3rem #808080;
-    animation: shine 4s forwards
-}
-@media (max-width:600px) {
-    .sign{
-        font-size: 2em;
-    }
 }
 .sign span{
     font-family: "tvNE";
     color: #ff002c;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffbfdb,
-    -0.2rem 0.1rem 1rem #ff8cad, 0.2rem 0.1rem 1rem #ff557a,
-    0 -0.5rem 2rem #ff2952, 0 0.5rem 3rem #ff002c;
-    animation: shine-red 4s forwards
-}   
-@keyframes shine {
-  0% {
-    color: #444444;
-    text-shadow: none;
-  }
-  100% {
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #808080, 0 0 1.5rem #EDEDED,
-    -0.2rem 0.1rem 1rem #D0D0D0, 0.2rem 0.1rem 1rem #B5B5B5,
-    0 -0.5rem 2rem #9A9A9A, 0 0.5rem 3rem #808080;
-  }
 }
-@keyframes shine-red {
-  0% {
-    color: #770017;
-    text-shadow: none;
-  }
-  100% {
-    color: #ff002c;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ffbfdb,
-    -0.2rem 0.1rem 1rem #ff8cad, 0.2rem 0.1rem 1rem #ff557a,
-    0 -0.5rem 2rem #ff2952, 0 0.5rem 3rem #ff002c;
-  }
+.line1{
+  left: 0;
+  top: -50vh;
+  font-size: min(10vw, 10vh);
+  color: black;
+  animation: firstline, whiteTxt;
+  animation-duration:.8s, .3s;
+  animation-delay: 0s, 2.4s;
+  animation-fill-mode:forwards;
 }
+@keyframes firstline{
+  from{top:-50vh}
+  to{top:20%}
+}
+.line2{
+  left: 15%;
+  top: -50vh;
+  color: black;
+  font-size: min(12vw, 12vh);
+  animation: secondline, whiteTxt;
+  animation-duration:.8s, .3s;
+  animation-delay:.8s, 2.4s;
+  animation-fill-mode:forwards;
+}
+@keyframes secondline{
+  from{top:-50vh}
+  to{top: 38%}
+}
+.line3{
+  right: 15%;
+  top: -50vh;
+  color: black;
+  font-size: min(8vw, 8vh);
+  animation: thirdline, whiteTxt;
+  animation-duration:.8s, .3s;
+  animation-delay:1.6s, 2.4s;
+  animation-fill-mode:forwards;
+}
+@keyframes thirdline{
+  from{top:-50vh}
+  to{top: 65%}
+}
+@keyframes whiteTxt{
+  from{color:black}
+  to{color:#d3d0cb}
+}
+
+
 </style>

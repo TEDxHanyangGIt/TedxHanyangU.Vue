@@ -7,12 +7,12 @@
       v-bind:btnOnColor="btnOnColor"
       v-bind:btnOffColor="btnOffColor" 
     />
-    <HomeSwiper />
+    <HomeContent />
   </div>
 </template>
 
 <script>
-import HomeSwiper from "@components/Home/HomeSwiper.vue"
+import HomeContent from "@components/Home/HomeContent.vue"
 export default {
   name: 'home',
   data(){
@@ -24,7 +24,7 @@ export default {
     }
   },
   components:{
-    HomeSwiper
+    HomeContent
   }
 };
 </script>

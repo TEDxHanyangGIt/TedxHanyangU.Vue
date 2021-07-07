@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color: black;">
+  <div style="background-color: black; width: 100vw">
     <Header
       v-bind:headOnColor="headOnColor"
       v-bind:headOffColor="headOffColor"
